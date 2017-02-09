@@ -1,0 +1,6 @@
+body {
+}
+
+span#errorMsg {
+    color: #f00;
+}

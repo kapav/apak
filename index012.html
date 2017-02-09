@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Продукт в файл и обратно</title>
+		<meta charset="windows-1251" />
+		<link rel="stylesheet" href="styles012.css" />
+	</head>
+	<body id="bodyElement">
+		<header>
+			<h1>Размещение перечня товаров</h1>
+			<nav>
+			</nav>
+		</header>
+		<!--Элемент для передачи значения о корректности ввода сведений о товаре-->
+		<input type="hidden" id="correctness" value="0">
+		<div id="messages">
+			<p>Если база данных не существует, нажатие <strong>Создать/Открыть БД</strong> создаёт её. Если база данных уже существует, нажатие <strong>Создать/Открыть БД</strong> открывает её.</p>
+			<p>Таким образом, Вам нужно нажать клавишу <strong>Создать/Открыть БД</strong> перед нажатием клавиши <strong>Заполнить БД</strong>.</p>
+		</div>
+		<div>
+			<button id="searchButton">Search (по имени товара)</button>
+		</div>
+		<article>
+			<p>
+				<div>
+					<label for="nameInput">Name:</label>
+				</div>
+				<div>
+					<input type="text" id="nameInput">
+					<span>* Required field</span>
+				</div>
+			</p>
+			<p>
+				<div>
+					<label for="countInput">Count:</label>
+				</div>
+				<div>
+					<input type="text" id="countInput">
+				</div>
+			</p>
+			<p>
+				<div>
+					<label for="priceInput">Price:</label>
+				</div>
+				<div>
+					<input type="text" id="priceInput">
+				</div>
+			</p>
+			<p>
+				<button type="button" id="addNewInModal">Add (новый товар)</button>
+			</p>
+		</article>
+		<footer>
+			<p>Авторские права &copy; 2016</p>
+		</footer>
+		<script src="scripts012.js"></script>
+		<script src="verify012.js"></script>
+	</body>
+</html>
+	
